@@ -5,14 +5,6 @@ public class Phone {
     String color;
     int ram;
 
-    public void call(){
-        System.out.println("Dialing... Treeeeem Treeem...... from " + make + " " + model);
-    }
-
-    public void browseInternet () {
-        System.out.println("Browsing Internet..... from " + make + " " + model);
-    }
-
     public static void main(String[] args) {
         Phone mobile1 = new Phone();
         mobile1.make = "Apple";
@@ -29,5 +21,13 @@ public class Phone {
         mobile2.ram = 8;
 
         mobile2.browseInternet();
+    }
+
+    public void call() {
+        System.out.println("Dialing... Treeeeem Treeem...... from " + make + " " + model);
+    }
+
+    public void browseInternet() {
+        System.out.println("Browsing Internet..... from " + make + " " + model);
     }
 }
